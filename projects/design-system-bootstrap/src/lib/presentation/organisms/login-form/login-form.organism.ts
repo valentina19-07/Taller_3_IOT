@@ -18,10 +18,10 @@ import { LoginFormData } from '../../../core/interfaces/core.interface';
 })
 export class LoginFormOrganism {
   /** Correo ingresado internamente */
-  private email: string = '';
+  email: string = '';
 
   /** Contraseña ingresada internamente */
-  private password: string = '';
+  password: string = '';
 
   /**
    * Evento emitido al enviar el formulario, solo si ambos campos tienen valor.

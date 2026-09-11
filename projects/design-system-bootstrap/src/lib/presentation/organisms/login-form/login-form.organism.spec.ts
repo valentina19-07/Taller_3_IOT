@@ -1,5 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core';
-import { By } from '@angular/platform-browser';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { LoginFormOrganism } from './login-form.organism';
 
 describe('LoginFormOrganism', () => {
@@ -24,8 +23,8 @@ describe('LoginFormOrganism', () => {
     component.onEmailChange('test@ejemplo.com');
     component.onPasswordChange('123456');
 
-    expect((component as any).email).toBe('test@ejemplo.com');
-    expect((component as any).password).toBe('123456');
+    expect(component.email).toBe('test@ejemplo.com');
+    expect(component.password).toBe('123456');
   });
 
   it('Debería emitir formSubmit cuando email y password tienen valor', () => {
