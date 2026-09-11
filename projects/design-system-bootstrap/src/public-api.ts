@@ -17,6 +17,7 @@ export { InputAtom } from './lib/presentation/atoms/input/input.atom';
 export { NavLinkMolecule } from './lib/presentation/molecules/nav-link/nav-link.molecule';
 export { ButtonGroupMolecule } from './lib/presentation/molecules/button-group/button-group.molecule';
 export { FormFieldMolecule } from './lib/presentation/molecules/form-field/form-field.molecule';
+export { SearchBoxMolecule } from './lib/presentation/molecules/search-box/search-box.molecule';
 
 //Organisms
 export { NavbarOrganism } from './lib/presentation/organisms/navbar/navbar.organism';
