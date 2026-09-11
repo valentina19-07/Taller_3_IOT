@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ContainerAtom, NavbarConfig, NavbarOrganism } from '@brejcha13320/design-system-bootstrap';
+import { ContainerAtom, NavbarConfig, NavbarOrganism, LoginFormOrganism, LoginFormData } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
   selector: 'app-organisms',
   templateUrl: './organisms.html',
-  imports: [NavbarOrganism, ContainerAtom],
+  imports: [NavbarOrganism, ContainerAtom, LoginFormOrganism],
 })
 export class Organisms {
   navbarConfig: NavbarConfig = {
@@ -18,5 +18,9 @@ export class Organisms {
       { text: 'Moléculas', url: '/molecules' },
       { text: 'Organismos', url: '/organisms' },
     ]
+  }
+
+  onLoginFormSubmit(data: LoginFormData) {
+    alert(`Formulario enviado con Email: ${data.email} y Contraseña: ${data.password}`);
   }
 }

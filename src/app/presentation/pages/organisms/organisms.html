@@ -1,3 +1,7 @@
 <dsb-container-atom title="Navbar" >
     <dsb-navbar-organism [navbarConfig]="navbarConfig"></dsb-navbar-organism>
 </dsb-container-atom>
+
+<dsb-container-atom title="Login Form" >
+    <dsb-login-form-organism (formSubmit)="onLoginFormSubmit($event)"></dsb-login-form-organism>
+</dsb-container-atom>
