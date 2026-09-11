@@ -17,7 +17,10 @@ import { LoginFormData } from '../../../core/interfaces/core.interface';
   imports: [FormFieldMolecule, ButtonAtom],
 })
 export class LoginFormOrganism {
+  /** Correo ingresado internamente */
   private email: string = '';
+
+  /** Contraseña ingresada internamente */
   private password: string = '';
 
   /**
@@ -26,10 +29,18 @@ export class LoginFormOrganism {
    */
   @Output() formSubmit: EventEmitter<LoginFormData> = new EventEmitter<LoginFormData>();
 
-  /** Actualiza el email capturado */
+  /**
+   * Actualiza el email capturado.
+   * @param {string} value Valor emitido por el campo de correo
+   * @returns {void}
+   */
   onEmailChange(value: string): void { this.email = value; }
 
-  /** Actualiza la contraseña capturada */
+  /**
+   * Actualiza la contraseña capturada.
+   * @param {string} value Valor emitido por el campo de contraseña
+   * @returns {void}
+   */
   onPasswordChange(value: string): void { this.password = value; }
 
   /**
