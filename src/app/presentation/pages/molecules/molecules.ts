@@ -6,7 +6,8 @@ import {
   FormFieldMolecule,
   InputType,
   NavLink, 
-  NavLinkMolecule 
+  NavLinkMolecule,
+  SearchBoxMolecule 
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -16,6 +17,7 @@ import {
     ButtonGroupMolecule,
     NavLinkMolecule,
     FormFieldMolecule,
+    SearchBoxMolecule,
   ],
 })
 export class Molecules {
@@ -51,5 +53,9 @@ export class Molecules {
 
   onFormFieldChange(idField: string, value: string) {
     this.lastValues[idField] = value;
+  }
+
+  onSearchBox(term: string) {
+    alert(`Buscando: ${term}`);
   }
 }
