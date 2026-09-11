@@ -71,3 +71,11 @@ export interface NavbarIconConfig {
     /** Tamaño del icono en unidades `rem` */
     size: number;
 }
+
+/** Datos capturados por el formulario de login */
+export interface LoginFormData {
+  /** Correo ingresado */
+  email: string;
+  /** Contraseña ingresada */
+  password: string;
+}
