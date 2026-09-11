@@ -1,1 +1,5 @@
-<p>login-form.organism works!</p>
+<form class="p-3 border rounded">
+  <dsb-form-field-molecule label="Correo" idField="login-email" type="email" (valueChange)="onEmailChange($event)"></dsb-form-field-molecule>
+  <dsb-form-field-molecule label="Contraseña" idField="login-password" type="password" (valueChange)="onPasswordChange($event)"></dsb-form-field-molecule>
+  <dsb-button-atom text="Ingresar" idButton="login-submit" (clicker)="onSubmit()"></dsb-button-atom>
+</form>
